@@ -11,6 +11,11 @@
         "EDITOR": "vi"
     },
 
+    // https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_specifying-a-user-for-vs-code
+    // ## TEST: does this fix the non-root issues related to volumes and stuff?
+    // "remoteUser": "octoprint",
+    // "containerUser": "octoprint",  ## also add user: "octoprint:octoprint" to docker compose
+
 	// The 'workspaceFolder' property is the path VS Code should open by default when
 	// connected. Corresponds to a volume mount in .devcontainer/docker-compose.yml
 	"workspaceFolder": "/root/plugins",
@@ -21,7 +26,71 @@
     ],
 
     // A command to run each time the container is successfully started.
-	"postStartCommand": "ls ; chmod +x *.sh ; ./install.sh"
+	"postStartCommand": "git config --global --unset-all safe.directory && git config --global --add safe.directory ${containerWorkspaceFolder}; git config --global core.autocrlf input && ls ; chmod +x *.sh ; ./install.sh",
+    
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"wayou.vscode-todo-highlight",
+				"Gruntfuggly.todo-tree"
+			],
+            "settings": {
+                "editor.bracketPairColorization.enabled": true,
+                "editor.guides.bracketPairs": true,
+                "todo-tree.general.statusBar": "tags",
+                "todo-tree.general.showActivityBarBadge": true,
+                "todo-tree.general.tagGroups": {
+                    "FIXME": [
+                        "FIXME",
+                        "FIXIT",
+                        "FIX"
+                    ]
+                },
+                "todo-tree.general.tags": [
+                    "[x]",
+                    "[ ]",
+                    "FIX",
+                    "TEST",
+                    "TEMPLATE_TODO",
+                    "TODO"
+                  ],
+                "todo-tree.highlights.customHighlight": {
+                    "TODO":{
+                      "gutterIcon": true,
+                      "foreground": "#64dd17",
+                      "background":"#008800",
+                      "iconColour":  "#64dd17"
+                    },
+                    "[x]":{
+                      "gutterIcon": false,
+                      "foreground": "#64dd17",
+                      "background":"#008800",
+                      "iconColour":  "#6d7e62"
+                    },
+                    "[ ]":{
+                      "gutterIcon": true,
+                      "foreground": "#f44336",
+                      "background": "#592c2c",
+                      "iconColour":  "#f44336"
+                    },
+                    "TEMPLATE_TODO":{
+                      "gutterIcon": false,
+                      "icon": "archive",
+                      "foreground": "#468144",
+                      "background": "#353535",
+                      "iconColour":  "#45533d"
+                    },
+                    "TEST":{
+                      "icon": "beaker",
+                      "foreground": "#b67805",
+                      "background": "#777474",
+                      "iconColour":  "#b67805"
+                    }
+                }
+            }
+		}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
