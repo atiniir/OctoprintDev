@@ -10,7 +10,8 @@ RUN apt-get update; apt install -y\
  jq \
  unzip \
  wget \
- vim 
+ vim \
+ sqlite3
 
 RUN python -m pip install --upgrade pip
 
