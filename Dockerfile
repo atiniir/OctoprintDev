@@ -1,6 +1,5 @@
 # https://hub.docker.com/r/octoprint/octoprint
-FROM octoprint/octoprint:1.8.4
-# -minimal
+FROM octoprint/octoprint:1.8.7
 
 ENV TZ="Etc/UTC"
 
