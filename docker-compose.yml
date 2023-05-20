@@ -23,7 +23,7 @@ services:
     - .\config\config.yaml:/octoprint/octoprint/config.yaml #  https://docs.octoprint.org/en/master/configuration/config_yaml.html
     - .\config\users.yaml:/octoprint/octoprint/users.yaml
     - .\config\logging.yaml:/octoprint/octoprint/logging.yaml
-    - .\octoplugins:/root/plugins:cached
+    - .\myplugins:/root/plugins:cached
 
 volumes:
   octoprint:
