@@ -1,0 +1,29 @@
+# http://127.0.0.1/#temp
+version: "3.9"
+
+x-logging:
+  &default-logging
+  options:
+    max-size: '12m'
+    max-file: '5'
+  driver: json-file
+
+
+services:
+  octoprint:
+    build: 
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    ports:
+      - 80:80
+    tty: true           # <-- This option keeps container running 
+    logging: *default-logging
+    volumes:
+    - octoprint:/octoprint
+    - .\config\config.yaml:/octoprint/octoprint/config.yaml #  https://docs.octoprint.org/en/master/configuration/config_yaml.html
+    - .\config\users.yaml:/octoprint/octoprint/users.yaml
+    - .\config\logging.yaml:/octoprint/octoprint/logging.yaml
+    - .\octoplugins:/root/plugins:cached
+
+volumes:
+  octoprint:

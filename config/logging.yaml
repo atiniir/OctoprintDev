@@ -1,0 +1,12 @@
+# https://docs.octoprint.org/en/master/configuration/logging_yaml.html
+loggers:
+  octoprint.events:
+    level: DEBUG
+  octoprint.filemanager:
+    level: INFO
+  octoprint.plugin: 
+    level: INFO
+  octoprint.plugins.queue:
+    level: DEBUG
+  octoprint.plugins.helloworld:
+    level: DEBUG
