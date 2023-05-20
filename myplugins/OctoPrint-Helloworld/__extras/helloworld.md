@@ -98,4 +98,4 @@ compatibility:
 ---
 
 **TODO**: Longer description of your plugin, configuration examples etc. This part will be visible on the page at
-http://plugins.octoprint.org/plugin/helloworld/
+<http://plugins.octoprint.org/plugin/helloworld/>
