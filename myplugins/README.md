@@ -7,6 +7,10 @@
   - if you forget check the `To recreate users.yaml or reset password` section in the main README.md
 - Confirm plugins have been installed, if not run `./restart.sh` from vscode terminal
 
+## Submodules for Plugins
+
+There is a submodule with plugin code at myplugins\OctoPrint-Queue which links to the repo <https://github.com/atiniir/OctoPrint-Queue>
+
 ## Helpers
 
 The `install.sh` and `restart.sh` scripts do what you'd expect based on the names
