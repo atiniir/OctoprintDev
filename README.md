@@ -15,7 +15,7 @@
 
 the devcontainer setup calls the setup.py and plugin install using `postStartCommand` invoke of `install.sh`
 
-you can use `restart.sh` to restart octoprint without having to go to the UI
+Check the README.md in `myplugins\` for more info on developing the plugins
 
 ## To recreate users.yaml or reset password
 
