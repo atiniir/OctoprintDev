@@ -2,10 +2,10 @@
 
 ## After starting devcontainer session
 
-- Confirm you can load octoprint at <http://localhost>
-- Login with oprint + usual password
-  - if you forget check the `To recreate users.yaml or reset password` section in the main README.md
-- Confirm plugins have been installed, if not run `./restart.sh` from vscode terminal
+* Confirm you can load octoprint at <http://localhost>
+* Login with oprint + usual password
+  * if you forget check the `To recreate users.yaml or reset password` section in the main README.md
+* Confirm plugins have been installed, if not run `./restart.sh` from vscode terminal
 
 ## Submodules for Plugins
 
@@ -29,8 +29,8 @@ See <https://docs.octoprint.org/en/master/configuration/index.html>
 
 ## TODO: Learning about plugins
 
-- [ ] map features and todos for the actual stuff for the plugin to do real things
-  - [ ] can look at other plugins <https://plugins.octoprint.org/>
-- [ ] get familiar with the mixins <https://docs.octoprint.org/en/master/plugins/mixins.html#>
-- [ ] check out the events <https://docs.octoprint.org/en/master/events/index.html#sec-events>
-- [ ] some of what i'm thinking is similar to <https://plugins.octoprint.org/plugins/DeleteAfterPrint/>
+* [ ] map features and todos for the actual stuff for the plugin to do real things
+  * [ ] can look at other plugins <https://plugins.octoprint.org/>
+* [ ] get familiar with the mixins <https://docs.octoprint.org/en/master/plugins/mixins.html#>
+* [ ] check out the events <https://docs.octoprint.org/en/master/events/index.html#sec-events>
+* [ ] some of what i'm thinking is similar to <https://plugins.octoprint.org/plugins/DeleteAfterPrint/>
