@@ -34,3 +34,9 @@ See <https://docs.octoprint.org/en/master/configuration/index.html>
 * [ ] get familiar with the mixins <https://docs.octoprint.org/en/master/plugins/mixins.html#>
 * [ ] check out the events <https://docs.octoprint.org/en/master/events/index.html#sec-events>
 * [ ] some of what i'm thinking is similar to <https://plugins.octoprint.org/plugins/DeleteAfterPrint/>
+
+## FIX: Stuff to fix or change in the project
+
+* [ ] Add vscode ext to devcontainer, python, todos
+* [ ] Add settings from ext like todos in devcontainer (for customizations)
+* [ ] Enable git usage within devcontainer (i think that safe dirs stuff)
