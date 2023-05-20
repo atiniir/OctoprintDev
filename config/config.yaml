@@ -46,10 +46,6 @@ server:
   pluginBlacklist:
     enabled: true
   secretKey: VqorxsZTIHHKG4iqYTv01y3GO0ZEPZXp
-  seenWizards:
-    backup: null
-    corewizard: 4
-    tracking: null
 temperature:
   profiles:
   - bed: 100
