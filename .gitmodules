@@ -1,0 +1,3 @@
+[submodule "myplugins/OctoPrint-Queue"]
+	path = myplugins/OctoPrint-Queue
+	url = https://github.com/atiniir/OctoPrint-Queue.git
