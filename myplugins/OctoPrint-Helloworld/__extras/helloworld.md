@@ -8,19 +8,19 @@ authors:
 - You
 license: AGPLv3
 
-# TODO
+# TEMPLATE_TODO
 date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
 
 homepage: https://github.com/you/OctoPrint-Helloworld
 source: https://github.com/you/OctoPrint-Helloworld
 archive: https://github.com/you/OctoPrint-Helloworld/archive/master.zip
 
-# TODO
+# TEMPLATE_TODO
 # Set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
 #follow_dependency_links: false
 
-# TODO
+# TEMPLATE_TODO
 tags:
 - a list
 - of tags
@@ -28,7 +28,7 @@ tags:
 - to your plugin
 - (take a look at the existing plugins for what makes sense here)
 
-# TODO
+# TEMPLATE_TODO
 # When registering a plugin on plugins.octoprint.org, all screenshots should be uploaded not linked from external sites.
 screenshots:
 - url: url of a screenshot, /assets/img/...
@@ -39,10 +39,10 @@ screenshots:
   caption: caption of another screenshot
 - ...
 
-# TODO
+# TEMPLATE_TODO
 featuredimage: url of a featured image for your plugin, /assets/img/...
 
-# TODO
+# TEMPLATE_TODO
 # You only need the following if your plugin requires specific OctoPrint versions or
 # specific operating systems to function - you can safely remove the whole
 # "compatibility" block if this is not the case.

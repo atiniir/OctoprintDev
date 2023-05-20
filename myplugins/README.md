@@ -27,10 +27,10 @@ Either run `install.sh` to update all plugins or run `octoprint dev plugin:insta
 
 See <https://docs.octoprint.org/en/master/configuration/index.html>
 
-## TODO
+## TODO: Learning about plugins
 
-- map features and todos for the actual stuff for the plugin to do real things
-  - can look at other plugins <https://plugins.octoprint.org/>
-- get familiar with the mixins <https://docs.octoprint.org/en/master/plugins/mixins.html#>
-- check out the events <https://docs.octoprint.org/en/master/events/index.html#sec-events>
-- some of what i'm thinking is similar to <https://plugins.octoprint.org/plugins/DeleteAfterPrint/>
+- [ ] map features and todos for the actual stuff for the plugin to do real things
+  - [ ] can look at other plugins <https://plugins.octoprint.org/>
+- [ ] get familiar with the mixins <https://docs.octoprint.org/en/master/plugins/mixins.html#>
+- [ ] check out the events <https://docs.octoprint.org/en/master/events/index.html#sec-events>
+- [ ] some of what i'm thinking is similar to <https://plugins.octoprint.org/plugins/DeleteAfterPrint/>
