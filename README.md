@@ -1,10 +1,10 @@
 # Octoprint Dev
 
-<https://hub.docker.com/r/octoprint/octoprint>
-<https://github.com/OctoPrint/octoprint-docker/blob/master/docker-compose.yml>
-<https://docs.octoprint.org/en/master/configuration/config_yaml.html>
-<https://docs.octoprint.org/en/master/plugins/gettingstarted.html>
-<https://docs.octoprint.org/en/master/plugins/index.html>
+- <https://hub.docker.com/r/octoprint/octoprint>
+- <https://github.com/OctoPrint/octoprint-docker/blob/master/docker-compose.yml>
+- <https://docs.octoprint.org/en/master/configuration/config_yaml.html>
+- <https://docs.octoprint.org/en/master/plugins/gettingstarted.html>
+- <https://docs.octoprint.org/en/master/plugins/index.html>
 
 ## After container starts (if freshy fresh)
 
