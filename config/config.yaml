@@ -1,8 +1,4 @@
 accessControl:
-  autologinAs: oprint
-  autologinLocal: true
-  localNetworks:
-  - 127.0.0.0/8
   userfile: /octoprint/octoprint/users.yaml
 api:
   key: B41207C475B84E84B0F96B39D9F42DC9
@@ -17,7 +13,7 @@ plugins:
       _octopi:
         read_until: 1677062400
       _plugins:
-        read_until: 1682985600
+        read_until: 1684540800
       _releases:
         read_until: 1683552600
   discovery:
@@ -35,6 +31,7 @@ plugins:
     unique_id: 319e3f78-fea9-4704-9d32-9253009df3dc
   virtual_printer:
     _config_version: 1
+    enabled: true
 printerProfiles:
   default: _default
 server:
