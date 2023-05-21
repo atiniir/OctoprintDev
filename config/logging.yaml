@@ -1,12 +1,17 @@
-# https://docs.octoprint.org/en/master/configuration/logging_yaml.html
 loggers:
   octoprint.events:
     level: DEBUG
   octoprint.filemanager:
+    level: DEBUG
+  octoprint.filemanager.storage:
     level: INFO
-  octoprint.plugin: 
+  octoprint.plugin:
     level: INFO
-  octoprint.plugins.queue:
+  octoprint.plugins.file_check:
     level: DEBUG
   octoprint.plugins.helloworld:
     level: DEBUG
+  octoprint.plugins.queue:
+    level: DEBUG
+  octoprint.plugins.virtual_printer:
+    level: INFO
