@@ -24,6 +24,11 @@ plugins:
     _config_version: 1
   helloworld:
     url: https://www.google.ca
+  queue:
+    printtypes:
+    - Alpha
+    - Beta
+    - Gamma
   softwareupdate:
     _config_version: 9
   tracking:
