@@ -18,15 +18,15 @@
 
 	// The 'workspaceFolder' property is the path VS Code should open by default when
 	// connected. Corresponds to a volume mount in .devcontainer/docker-compose.yml
-	"workspaceFolder": "/root/plugins",
+	"workspaceFolder": "/workspace",
 
     "mounts": [
-        "source=${localWorkspaceFolder},target=//ansibles,type=bind",
+        "source=${localWorkspaceFolder},target=/workspace,type=bind",
         "source=${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,ro,type=bind" 
     ],
 
     // A command to run each time the container is successfully started.
-	"postStartCommand": "git config --global --unset-all safe.directory && git config --global --add safe.directory ${containerWorkspaceFolder}; git config --global core.autocrlf input && ls ; chmod +x *.sh ; ./install.sh",
+	"postStartCommand": "git config --global --unset-all safe.directory && git config --global --add safe.directory ${containerWorkspaceFolder}; git config --global core.autocrlf input && ls ; cd myplugins ; chmod +x *.sh ; ./install.sh",
     
 	"customizations": {
 		"vscode": {
