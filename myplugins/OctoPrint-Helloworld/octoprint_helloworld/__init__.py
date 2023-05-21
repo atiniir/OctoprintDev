@@ -1,3 +1,6 @@
+
+import logging
+import logging.handlers
 import octoprint.plugin
 
 # https://docs.octoprint.org/en/master/plugins/mixins.html#sec-plugins-mixins
@@ -8,8 +11,26 @@ import octoprint.plugin
 class HelloWorldPlugin(octoprint.plugin.StartupPlugin,
                        octoprint.plugin.TemplatePlugin,
                        octoprint.plugin.SettingsPlugin):
+    
+    def __init__(self):
+        self._console_logger = None
+
+    def initialize(self):
+        self._console_logger = logging.getLogger("octoprint.plugins.helloworld")
+
+    def on_startup(self, host, port):
+        console_logging_handler = logging.handlers.RotatingFileHandler(
+            self._settings.get_plugin_logfile_path(postfix="helloworld"), maxBytes=2 * 1024 * 1024)
+        console_logging_handler.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
+        console_logging_handler.setLevel(logging.INFO)
+
+        self._console_logger.addHandler(console_logging_handler)
+        self._console_logger.setLevel(logging.INFO)
+        self._console_logger.propagate = False
+
     def on_after_startup(self):
-        self._logger.info("Hello World!")
+        self._console_logger.info("Console Logger Hello World!")
+        self._logger.info("Logger Hello World!")
 
     def get_settings_defaults(self):
         return dict(url="https://en.wikipedia.org/wiki/Hello_world")
