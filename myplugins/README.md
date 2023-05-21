@@ -30,13 +30,15 @@ See <https://docs.octoprint.org/en/master/configuration/index.html>
 ## TODO: Learning about plugins
 
 - [ ] map features and todos for the actual stuff for the plugin to do real things
-  - [ ] can look at other plugins <https://plugins.octoprint.org/>
+  - can look at other plugins <https://plugins.octoprint.org/>
 - [ ] get familiar with the mixins <https://docs.octoprint.org/en/master/plugins/mixins.html#>
 - [ ] check out the events <https://docs.octoprint.org/en/master/events/index.html#sec-events>
 - [ ] some of what i'm thinking is similar to <https://plugins.octoprint.org/plugins/DeleteAfterPrint/>
+- [x] how to setup the virtual printer <https://docs.octoprint.org/en/master/development/virtual_printer.html>
+  - enabled in the config.yaml
 
 ## FIX: Stuff to fix or change in the project
 
 - [x] Add vscode ext to devcontainer, python, todos = can right click in ext view to add
 - [x] Add settings from ext like todos in devcontainer (for customizations) = added to devcontainer json
-- [ ] Enable git usage within devcontainer (i think that safe dirs stuff) > hmm, would need to change workspace dir to be parent
+- [x] Enable git usage within devcontainer (i think that safe dirs stuff) > done, now using the workspace
