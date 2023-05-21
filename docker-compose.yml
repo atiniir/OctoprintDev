@@ -11,6 +11,7 @@ x-logging:
 
 services:
   octoprint:
+    image: octoprintdev-octoprint
     build: 
       dockerfile: ./Dockerfile
     restart: unless-stopped
