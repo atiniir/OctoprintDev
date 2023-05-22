@@ -19,6 +19,8 @@ The `tail.sh` script will tail (with follow) all the logs in `/octoprint/octopri
 
 ## After changing plugin code
 
+Seems like most of the time can just call `restart.sh`
+
 See <https://docs.octoprint.org/en/master/plugins/concepts.html#lifecycle> for plugin development fundamentals
 
 Either run `install.sh` to update all plugins or run `octoprint dev plugin:install` from the folder with the plugin source
@@ -26,6 +28,34 @@ Either run `install.sh` to update all plugins or run `octoprint dev plugin:insta
 ## Changing Octoprint Configuration
 
 See <https://docs.octoprint.org/en/master/configuration/index.html>
+
+## Handling Changes to Submodules
+
+Always work in a branch of the submodule, this makes PR requests much easier to manage.
+
+### Syncing Upstream Changes
+
+Periodically check <https://github.com/atiniir/OctoPrint-Queue>, check the Sync fork option and update the main branch if there are changes.
+
+Then merge the new main branch updates to any existing branches.
+
+### Working in Dev
+
+Use the *dev* branch for usual work, testing and exploration.
+
+### Preparing for a PR
+
+When there are changes ready to generate a PR for:
+
+- Confirm sure main branch is up to date with upstream
+- Create a new branch from the main branch
+- Make changes to the new branch
+- Submit a PR from the new branch
+
+When the PR has been merged
+
+- Delete the PR branch
+- Sync changes to master and propigate to any existing branches (dev, others) 
 
 ## TODO: Learning about plugins
 
