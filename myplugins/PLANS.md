@@ -28,5 +28,9 @@
 ## Fixes
 
 - [ ] Load file button doesn't work
-- [x] Ordering the categories in settings UI doesn't work
 - [ ] Investigate warning octoprint.plugins.queue - WARNING - The Blueprint of this plugin is relying on the default implementation of is_blueprint_csrf_protected (newly added in OctoPrint 1.8.3), which in a future version will be switched from False to True for security reasons. Plugin authors should ensure they explicitly declare the CSRF protection status in their BlueprintPlugin mixin implementation. Recommendation is to enable CSRF protection and exempt views that must not use it with the octoprint.plugin.BlueprintPlugin.csrf_exempt decorator.
+
+## Completed
+
+- [x] Ordering the categories in settings UI doesn't work
+  - <https://github.com/chennes/OctoPrint-Queue/pull/11>
