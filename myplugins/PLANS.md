@@ -8,9 +8,9 @@
 - [x] Where is the queue stored? = (self.get_plugin_data_folder(),"queue.db")
 - [x] Where is get_plugin_data_folder? = in settings folder (usually ~/.octoprint) in devcontainer env it's /octoprint/octoprint/data/queue/queue.db
 - [x] Can I pre-load the queue on devcontainer startup, for testing = YES
-  - can use `sqlite3 -init /root/plugins/OctoPrint-Queue/test_data/basic.sql /octoprint/octoprint/data/queue/queue.db`
+  - can use `sqlite3 -init /workspace/test_data/basic.sql /octoprint/octoprint/data/queue/queue.db`
   - .open /octoprint/octoprint/data/queue/queue.db
-  - .read /root/plugins/OctoPrint-Queue/test_data/basic.sql
+  - .read /workspace/test_data/basic.sql
 - [x] How to add logging for the plugin from js, where to see the logs
   - added custom log 'plugin_queue_queue.log' for easier log finding
   - can use console.log or log.info in js to see in browser console, not recorded to server (obvs)
